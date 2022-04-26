@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Graphik Extralight;
+    src: url(assets/fonts/Graphik-Extralight.otf) format("opentype");
+}
+
+body{
+    font-family: 'Graphik Extralight';
+}
+
+.row {
+    --bs-gutter-x: 0!important;
+    --bs-gutter-y: 0!important;
+}
+.bg-main{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/backcaminando.appspot.com/o/soho%2Fbg-main.jpg?alt=media&token=b0695dbc-332e-43b3-924f-09259a5ef6b1');
+    height: 800px;
+    background-repeat:no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.app-featured{
+    background-color: #263238;
+    padding: 10px;
+    text-align: center;
+}
+.app-featured-title{
+    color: #ffffff;
+}
+
+.app-featured-text{
+    color: #90a4ae;
+}
+
+.footer{
+    background-color: #000;
+    padding: 5px;
+    color: #ffffff;
+}
