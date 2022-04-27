@@ -1,6 +1,6 @@
 .derco-client{
     background-image: url('https://firebasestorage.googleapis.com/v0/b/backcaminando.appspot.com/o/soho%2Fderco-client.jpg?alt=media&token=e2accdcd-33bd-44f5-a22b-19636bbb95f8');
-    background-position: 50% 50%;
+    background-position: center top;
     background-size: cover;
     text-align: center;
 
@@ -8,15 +8,19 @@
 
 .diners-client{
     background-image: url('https://firebasestorage.googleapis.com/v0/b/backcaminando.appspot.com/o/soho%2Fdiners-client.jpg?alt=media&token=ec0f4bd2-adae-48d2-8da4-861af15b18f4');
-    background-position: 50% 50%;
+    background-position: center top;
     background-size: cover;
     text-align: center;
 }
 
 .copec-client{
     background-image: url('https://firebasestorage.googleapis.com/v0/b/backcaminando.appspot.com/o/soho%2Fcopec-client.jpg?alt=media&token=3733ddc5-ad2f-48f8-b2e8-d1a5e56625fa');
-    background-position: 50% 50%;
+    background-position: center top;
     background-size: cover;
     text-align: center;
 }
 
+.text-customer{
+    font-weight: 600;
+    font-size: 1.5em;
+}
