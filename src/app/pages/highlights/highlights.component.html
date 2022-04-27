@@ -11,23 +11,27 @@
 
 </div>
 
-<!-- <div *ngFor="let project of projects | json">
-
-</div> -->
-{{projects | json}}
-<div class="diners">
-    <div class="row">
-        <div class="col-md-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto delectus exercitationem corrupti vel error quas optio facere veniam quibusdam nam necessitatibus cupiditate officiis velit eius repudiandae voluptates minima, tempora ullam!
-        </div>
-        <div class="col-md-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus nam aut eos sint debitis, dolorum dicta! Excepturi, rerum placeat fugiat neque ut quaerat error, accusantium architecto a laborum, saepe culpa.
+<div *ngFor="let project of projects">
+    <div class="{{project['name']}}">
+        <div class="row ">
+            <div class="col-md-6 mt-5 order-{{project['order']}}">
+                <img src="{{project['img_url_content']}}" class="img-fluid"  alt="">
+            </div>
+            <div class="col-md-6 into-box">
+                <div class="col-md-6 offset-md-3">
+                    <img src="{{project['img_url_logo']}}" class="img-fluid" width="30%" alt="">
+                    <h3 class="mt-3">{{project['title']}}</h3>
+                    <p class="mt-3">
+                        {{project['content']}}
+                    </p>
+                    <div class="row">
+                        <p class="link-hl">UI responsive</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-{{project['name']}}">VER DETALLES</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="derco">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam a distinctio perspiciatis. Blanditiis ducimus eaque nemo perferendis nulla, officia eius est, iusto, voluptatem laudantium sequi sunt quisquam nam suscipit.
-</div>
-<div class="copec">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam a distinctio perspiciatis. Blanditiis ducimus eaque nemo perferendis nulla, officia eius est, iusto, voluptatem laudantium sequi sunt quisquam nam suscipit.
 </div>

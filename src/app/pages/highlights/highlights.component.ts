@@ -10,17 +10,15 @@ import { ProjectI } from '../../models/Project/project.interface';
 })
 export class HighlightsComponent implements OnInit {
 
-  projects:ProjectI | NgIterable<any> | undefined ;
+  projects = [];
 
   constructor(private dataSvc:DataService) { }
 
   ngOnInit(): void {
 
-
-
-    this.dataSvc.getAllProjects().subscribe(data => {
+    this.dataSvc.getAllProjects().subscribe(data =>
       (this.projects = data)
-    });
+    );
   }
 
 }

@@ -1,0 +1,33 @@
+.center{
+    text-align: center;
+}
+
+.text-green{
+    padding: 0 20px;
+    color: #43d141;
+    cursor: pointer;
+}
+
+.facebook{
+    color: #3b5998;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.twitter{
+    color: #00acee;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.linkedin{
+    color: #0e76a8;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.youtube{
+    color: #c4302b;
+    padding: 0 20px;
+    cursor: pointer;
+}
