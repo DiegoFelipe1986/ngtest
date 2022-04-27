@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgIterable, OnInit } from '@angular/core';
+import { DataService } from 'src/app/components/highlights/data.service';
+import { ProjectI } from '../../models/Project/project.interface';
+
 
 @Component({
   selector: 'app-highlights',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HighlightsComponent implements OnInit {
 
-  constructor() { }
+  projects:ProjectI | NgIterable<any> | undefined ;
+
+  constructor(private dataSvc:DataService) { }
 
   ngOnInit(): void {
+
+
+
+    this.dataSvc.getAllProjects().subscribe(data => {
+      (this.projects = data)
+    });
   }
 
 }
